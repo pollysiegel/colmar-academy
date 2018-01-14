@@ -8,6 +8,27 @@ html {
   width: 100%;
 }
 
+h1, h2, h3, h4 {
+  font-weight:700;
+}
+
+h2 {
+  font-family: "Arial Rounded MT Bold", sans-serif;
+  color: black;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p, button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
 header {
   width: 100%;
   position: fixed;
@@ -49,7 +70,7 @@ header .logo {
 
 header .right-side {
   display: inline-flex;
-  flex-directon: row;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -57,7 +78,8 @@ header .right-side a {
   padding-left: 1rem;
 }
 
-/* Style academy name */
+/* Style the two parts of the academy name */
+
 .academy-name span:first-child {
   color: black;
   font-weight: 700;
@@ -66,7 +88,7 @@ header .right-side a {
 .academy-name span:last-child {
   color: gray;
   font-weight: 300;
-  margin-left: -.25rem;
+  margin-left: -.25rem; /* Skootch the two pieces of the logo together */
 }
 
 /*
@@ -90,8 +112,68 @@ header .right-side a {
 }
 
 
-
 main {
   position: relative;
   top: 4rem; /* To offset for fixed header. */
+}
+
+
+/*
+ * First block CSS
+ */
+
+.headline {
+  background-color: darkgray;
+  width: 100%;
+}
+
+.headline .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding: 2rem 1.5rem;
+}
+
+.headline img {
+  max-width: 60%;
+}
+
+.headline .learn {
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+.headline button {
+  color: white;
+  text-align: center;
+  background-color: black;
+  border: 0;
+  height: 2rem;
+  width: 100%;
+}
+
+@media only screen and (max-width: 575px) {
+
+  /* Image and columns stack on mobile */
+
+  .headline .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0;
+  }
+
+  .headline img {
+    max-width:100%;
+  }
+
+  .headline .learn {
+    padding-top: 2rem;
+    line-height: 1.4;
+  }
+
+  .headline .learn p {
+    padding: 2rem 1rem;
+  }
 }
