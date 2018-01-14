@@ -1,0 +1,26 @@
+Colmar Academy Website
+
+Class project for Codecademy website building class
+
+Design Choices
+
+- Content:
+   - Headings: sentence capitalized
+- Font family:
+- Transitions:
+
+Implementation strategy:
+
+1. Structure basic page layout from wireframes (DONE)
+2. Create HTML for site, including classes and content (DONE)
+3. Create initial CSS for site, with basic colors, fonts as a start
+  a. Header (DONE)
+  b. First block
+  c. Second block
+  d. Third block
+  e. Fourth block
+  f. Footer
+4. Add media queries for mobile
+5. Refine fonts and typefaces
+6. Refine colors
+7. Work on transitions and hover effects

@@ -1,0 +1,97 @@
+
+
+/* Universal Styles */
+
+html {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 16px;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  z-index: 1;     /* Keep header on top */
+}
+
+header .container {
+  padding: 1rem 1.5rem;
+}
+
+header nav {
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center; /* align items vertically */
+}
+
+/*
+ * On desktop, we want left and right parts of the
+ * header to stay on the left and the right
+ */
+header nav.desktop {
+  justify-content: space-between;
+}
+
+/*
+ * On mobile, the menu items should be evenly spaced
+ */
+header nav.mobile {
+  justify-content: space-evenly;
+}
+
+header .logo {
+  display: inline-flex;
+  align-items: center;
+  height: 2rem;
+}
+
+header .right-side {
+  display: inline-flex;
+  flex-directon: row;
+  align-items: center;
+}
+
+header .right-side a {
+  padding-left: 1rem;
+}
+
+/* Style academy name */
+.academy-name span:first-child {
+  color: black;
+  font-weight: 700;
+}
+
+.academy-name span:last-child {
+  color: gray;
+  font-weight: 300;
+  margin-left: -.25rem;
+}
+
+/*
+ * Hide all mobile-only elements on desktop until
+ * viewport gets so small that menu text wraps
+ */
+
+@media only screen and (min-width: 575px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 574px) {
+
+  /* Hide all desktop-only elements on mobile */
+
+  .desktop {
+    display: none;
+  }
+}
+
+
+
+main {
+  position: relative;
+  top: 4rem; /* To offset for fixed header. */
+}
