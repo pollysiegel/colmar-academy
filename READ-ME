@@ -15,10 +15,10 @@ Implementation strategy:
 2. Create HTML for site, including classes and content (DONE)
 3. Create initial CSS for site, with basic colors, fonts as a start
   a. Header (DONE)
-  b. First block
-  c. Second block
-  d. Third block
-  e. Fourth block
+  b. First block (headline) (DONE)
+  c. Second block (info) (DONE)
+  d. Third block (courses)
+  e. Fourth block (examples)
   f. Footer
 4. Add media queries for mobile
 5. Refine fonts and typefaces

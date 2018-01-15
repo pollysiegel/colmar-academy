@@ -26,7 +26,8 @@ h3 {
 p, button {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.2;
 }
 
 header {
@@ -119,7 +120,7 @@ main {
 
 
 /*
- * First block CSS
+ * First block CSS -- headline
  */
 
 .headline {
@@ -177,3 +178,116 @@ main {
     padding: 2rem 1rem;
   }
 }
+
+
+/*
+ * Second block -- school info
+ */
+
+.info {
+  .padding: 2rem 1.5rem;
+  background-color: white;
+  width: 100%;
+}
+
+.info .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-start;
+  padding: 2rem 1.5rem;
+}
+
+.info .main {
+  display: inline-flex;
+  flex-direction: column;
+  max-width: 60%;
+  padding-right: 1.5rem;
+}
+
+.info .main img {
+  max-width: 100%;
+}
+
+.info .main .content {
+  max-width: 100%;
+  text-align: left;
+}
+
+/* Items are stacked on right-hand side of page */
+
+.info .items {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+}
+
+.info .item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 1rem;
+  width: 100%;
+}
+
+.info .item:last-child {
+  background-color: lightgray;
+}
+
+.info .item .image {
+  height: auto;
+  max-width: 35%;
+}
+
+.info .item .image img {
+  width: 100%;
+}
+
+.info .item .content {
+  text-align: left;
+  max-width: 65%;
+  padding-left: 1rem;
+}
+
+.info a.read-more {
+  color: blue;
+}
+
+@media only screen and (max-width: 575px) {
+
+  /* Hide the main "fluff" item on mobile */
+
+  .info .main {
+    display: none;
+  }
+
+  /* Stack the remaining informational items in a column */
+
+  .info .items {
+    max-width: 100%;
+  }
+
+  .info .item {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .info .item .image {
+    max-width: 100%;
+  }
+
+  .info .item .content {
+    max-width: 100%;
+  }
+
+}
+
+/*
+ * Third block -- course info
+ */
+
+
+/*
+ * Fourth block -- examples
+ */
