@@ -410,13 +410,20 @@ main {
   width: 100%;
 }
 
+
 .exhibits .exhibit:first-child {
   background-color: gray;
 }
 
 .exhibits .right-side img {
+  width: 35%;
   padding: 1rem 1rem;
 }
+
+.exhibits .right-side .content {
+  width: 65%;
+}
+
 
 /*
  * For mobile, only display the main exhibit
