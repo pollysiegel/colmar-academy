@@ -5,6 +5,7 @@
 html {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 16px;
+  text-align: left;
   width: 100%;
 }
 
@@ -287,7 +288,169 @@ main {
  * Third block -- course info
  */
 
+.courses {
+  width: 100%;
+  background-color: lightgray;
+}
+
+.courses h2 {
+  text-align: center;
+}
 
 /*
- * Fourth block -- examples
+ * Container contains two stacked rows of courses
  */
+.courses .container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 4.5rem;
+  max-width: 100%;
+}
+
+/*
+ * Two rows of courses
+ */
+.courses .container .row {
+  display: flex;
+  flex-direction: row;
+}
+
+.courses .container .row:last-child {
+  padding-top: 2rem;
+}
+
+.course {
+  display: block;
+  width: 100%;
+  background-color: white;
+}
+
+/*
+ * Add padding in for the second and third children in
+ * each row
+ */
+.course:nth-child(1n + 2) {
+  margin-left: 2rem;
+}
+
+.course img {
+  max-width: 100%;
+}
+
+/*
+ * Collapse the section into a list of headings on mobile
+ */
+
+
+@media only screen and (max-width: 575px) {
+
+  .courses .container .row {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .course {
+    margin: .5rem 1rem 0 1rem;
+  }
+
+  .course img, .course h4, .course p {
+    display: none;
+  }
+
+  .course h3 {
+    background-color: lightgray;
+    padding: 1rem 0 1.5rem 1rem;
+  }
+
+
+}
+
+/*
+ * Fourth block -- exhibits.
+ */
+
+.exhibits {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.exhibits h2 {
+  text-align: center;
+}
+
+.exhibits video {
+  max-width: 100%;
+}
+
+.exhibits .container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: stretch;
+  padding: 1.5rem 1.5rem;
+}
+
+.exhibits .main-exhibit {
+  width: 60%;
+}
+
+.exhibits .right-side {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 1.5rem;
+}
+
+.exhibits .exhibit {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem 1rem;
+  width: 100%;
+}
+
+.exhibits .exhibit:first-child {
+  background-color: gray;
+}
+
+.exhibits .right-side img {
+  padding: 1rem 1rem;
+}
+
+/*
+ * For mobile, only display the main exhibit
+ */
+@media only screen and (max-width: 575px) {
+
+  .exhibits .right-side {
+    display: none;
+  }
+}
+
+/*
+ * Footer
+ */
+
+
+footer .content {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 1.5rem;
+  width: 100%;
+}
+
+/* Only display copyright on a small screen */
+
+@media only screen and (max-width: 575px) {
+
+  footer .right-side {
+    display: none;
+  }
+
+  footer {
+    text-align: center;
+  }
+}

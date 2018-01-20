@@ -17,10 +17,13 @@ Implementation strategy:
   a. Header (DONE)
   b. First block (headline) (DONE)
   c. Second block (info) (DONE)
-  d. Third block (courses)
-  e. Fourth block (examples)
-  f. Footer
-4. Add media queries for mobile
+  d. Third block (courses) (DONE)
+  e. Fourth block (examples) (DONE)
+  f. Footer (DONE)
+4. Add media queries for mobile (DONE)
 5. Refine fonts and typefaces
 6. Refine colors
 7. Work on transitions and hover effects
+8. Refine layout and mobile transitions
+  a. Test on tablet (make sure requirements are met)
+  b. Test on mobile (make sure requirements are met)
