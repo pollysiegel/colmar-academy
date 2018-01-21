@@ -3,21 +3,21 @@
 /* Universal Styles */
 
 html {
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Palatino", sans-serif;
   font-size: 16px;
   text-align: left;
+  line-height: 1.2;
   width: 100%;
 }
 
 h1, h2, h3, h4 {
   font-weight:700;
+  line-height: 1.4;
 }
 
 h2 {
-  font-family: "Arial Rounded MT Bold", sans-serif;
   color: black;
   font-size: 2.5rem;
-  line-height: 1.2;
 }
 
 h3 {
@@ -60,6 +60,7 @@ header nav.desktop {
 /*
  * On mobile, the menu items should be evenly spaced
  */
+
 header nav.mobile {
   justify-content: space-evenly;
 }
@@ -125,7 +126,7 @@ main {
  */
 
 .headline {
-  background-color: darkgray;
+  background-color: lightgray;
   width: 100%;
 }
 
@@ -149,10 +150,10 @@ main {
 .headline button {
   color: white;
   text-align: center;
-  background-color: black;
+  background-color: darkgray;
   border: 0;
-  height: 2rem;
-  width: 100%;
+  height: 3rem;
+  width: 90%;
 }
 
 @media only screen and (max-width: 575px) {
@@ -272,6 +273,7 @@ main {
   .info .item {
     flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .info .item .image {
@@ -289,8 +291,9 @@ main {
  */
 
 .courses {
-  width: 100%;
   background-color: lightgray;
+  width: 100%;
+  padding-top: 2rem;
 }
 
 .courses h2 {
@@ -315,27 +318,34 @@ main {
   flex-direction: row;
 }
 
-.courses .container .row:last-child {
-  padding-top: 2rem;
-}
-
 .course {
   display: block;
   width: 100%;
   background-color: white;
 }
 
+.course img {
+  max-width: 100%;
+}
+
 /*
  * Add padding in for the second and third children in
  * each row
  */
-.course:nth-child(1n + 2) {
-  margin-left: 2rem;
+
+@media only screen and (min-width: 576px) {
+
+  .course:nth-child(1n + 2) {
+    margin-left: 2rem;
+  }
+
+  .courses .container .row:last-child {
+    padding-top: 2rem;
+  }
+
 }
 
-.course img {
-  max-width: 100%;
-}
+
 
 /*
  * Collapse the section into a list of headings on mobile
@@ -344,9 +354,14 @@ main {
 
 @media only screen and (max-width: 575px) {
 
+  .courses {
+    background-color: white;
+    width: 100%;
+  }
+
   .courses .container .row {
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .course {
@@ -430,8 +445,14 @@ main {
  */
 @media only screen and (max-width: 575px) {
 
-  .exhibits .right-side {
+  .exhibits .right-side,
+  .exhibits h3,
+  .exhibits p {
     display: none;
+  }
+
+  .exhibits .main-exhibit {
+    width: 100%;
   }
 }
 
@@ -449,6 +470,10 @@ footer .content {
   width: 100%;
 }
 
+footer .right-side {
+  padding-right: 1.5rem;
+}
+
 /* Only display copyright on a small screen */
 
 @media only screen and (max-width: 575px) {
@@ -457,7 +482,8 @@ footer .content {
     display: none;
   }
 
-  footer {
-    text-align: center;
+  footer .copyright {
+    text-align: left;
+    width: 100%;
   }
 }
