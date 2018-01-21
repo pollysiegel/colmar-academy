@@ -27,3 +27,10 @@ Implementation strategy:
 8. Refine layout and mobile transitions
   a. Test on tablet (make sure requirements are met)
   b. Test on mobile (make sure requirements are met)
+
+
+
+Design Choices
+
+Font: Open-Sans. Cuz I like the way it looks
+Text color: dark gray which isn't as harsh as black

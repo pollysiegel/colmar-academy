@@ -3,10 +3,11 @@
 /* Universal Styles */
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;
   text-align: left;
   line-height: 1.2;
+  color: #444;
   width: 100%;
 }
 
@@ -17,11 +18,16 @@ h1, h2, h3, h4 {
 
 h2 {
   color: black;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 p, button {
@@ -230,6 +236,7 @@ main {
   justify-content: flex-start;
   align-items: center;
   padding: 1rem 1rem;
+  border: .5px solid lightgray;
   width: 100%;
 }
 
@@ -328,9 +335,26 @@ main {
   max-width: 100%;
 }
 
+.course .content {
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+/*
+ * As we shrink, lose the image (but keep
+ * the course description)
+ */
+
+@media only screen and (max-width: 800px) {
+  .course img {
+    display: none;
+  }
+}
+
+
 /*
  * Add padding in for the second and third children in
- * each row
+ * each row on larger viewports
  */
 
 @media only screen and (min-width: 576px) {
@@ -427,7 +451,7 @@ main {
 
 
 .exhibits .exhibit:first-child {
-  background-color: gray;
+  background-color: lightgray;
 }
 
 .exhibits .right-side img {
@@ -441,9 +465,24 @@ main {
 
 
 /*
- * For mobile, only display the main exhibit
+ * As the viewport gets smaller, adjust the text size
  */
-@media only screen and (max-width: 575px) {
+
+@media only screen and (max-width: 800px) {
+  .exhibits h3 {
+    font-size: 1rem;
+  }
+
+  .exhibits p {
+    font-size: .75rem;
+  }
+}
+
+/*
+ * For smaller viewports, only display the main exhibit
+ */
+
+@media only screen and (max-width: 670px) {
 
   .exhibits .right-side,
   .exhibits h3,
