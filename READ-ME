@@ -22,12 +22,13 @@ Implementation strategy:
   f. Footer (DONE)
 4. Add media queries for mobile (DONE)
 5. Refine fonts and typefaces (DONE)
-6. Refine colors
-7. Work on transitions and hover effects
+6. Refine colors (DONE)
+7. Work on transitions and hover effects (DONE)
 8. Refine layout and mobile transitions
-  a. Test on tablet (make sure requirements are met)
-  b. Test on mobile (make sure requirements are met)
-
+  a. Test on tablet (make sure requirements are met) (DONE)
+  b. Test on mobile (make sure requirements are met) (DONE)
+9. Accessibility
+10. Fix logos in SVG editor so that they are light-gray
 
 
 Design Choices
@@ -48,3 +49,5 @@ Text color: dark gray which isn't as harsh as black
   --black-complement: #181E18; /* complement-3 */
   --green: #097A10; /* complement-4 */
 }
+
+Didn't use all colors, because they didn't

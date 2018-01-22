@@ -384,6 +384,11 @@ main {
   color: var(--black);
 }
 
+.course:hover {
+  background-color: var(--red);
+  color: var(--light-gray-complement);
+}
+
 .course img {
   max-width: 100%;
 }
