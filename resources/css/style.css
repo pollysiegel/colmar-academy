@@ -119,6 +119,10 @@ header .right-side a {
   padding-left: 1rem;
 }
 
+header a:hover {
+  color: var(--light-gray-complement);
+}
+
 /* Style the two parts of the academy name */
 
 .academy-name {
@@ -306,6 +310,11 @@ main {
   color: var(--red);
 }
 
+.info a.read-more:hover {
+  color: var(--dark-gray-complement);
+  font-weight: 700;
+}
+
 @media only screen and (max-width: 575px) {
 
   /* Hide the main "fluff" item on mobile */
@@ -458,8 +467,8 @@ main {
  */
 
 .exhibits {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   max-width: 100%;
 }
 
@@ -508,7 +517,7 @@ main {
 }
 
 .exhibits .exhibit:last-child {
-  background-color: var(--medium-gray);
+  background-color: var(--medium-gray-complement);
 }
 
 .exhibit:last-child p, .exhibit:last-child h3 {
@@ -570,6 +579,10 @@ footer a {
   color: var(--light-gray-complement);
 }
 
+footer a:hover {
+  color: var(--light-gray);
+}
+
 footer .content {
   display: inline-flex;
   flex-direction: row;
@@ -591,6 +604,8 @@ footer a:first-child {
   padding-right: 1rem;
   border-right: 1px solid var(--light-gray-complement);
 }
+
+
 
 footer a:last-child {
   padding-left: 1rem;
