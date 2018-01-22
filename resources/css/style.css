@@ -154,7 +154,7 @@ header a:hover {
 
 main {
   position: relative;
-  top: 4rem; /* To offset for fixed header. */
+  padding-top: 4rem; /* To offset for fixed header. */
 }
 
 
@@ -575,6 +575,7 @@ footer {
   background-color: var(--black);
   color: var(--light-gray);
   max-width: 100%;
+  z-index: 1;
 }
 
 footer a {
@@ -582,9 +583,9 @@ footer a {
 }
 
 footer a:hover {
-  color: var(--green);
+  color: var(--light-gray-complement);
   font-weight: bold;
-  transition: color 1.5s ease-in 0.5s;
+  transition: color .25s ease-in 0.25s;
 }
 
 

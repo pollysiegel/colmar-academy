@@ -33,7 +33,7 @@ Implementation strategy:
 Bugs
 
 -- mobile bottom (exhibits) overlapping with footer (FIXED)
--- Terms/Privacy hover effects aren't working
+-- Terms/Privacy hover effects aren't working (FIXED)
 -- Color for logos on mobile need to be redone
 
 
