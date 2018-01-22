@@ -491,6 +491,7 @@ main {
 
 .exhibits .main-exhibit {
   max-width: 60%;
+  padding-bottom: 2rem;
 }
 
 .exhibits .right-side {
@@ -574,7 +575,6 @@ footer {
   background-color: var(--black);
   color: var(--light-gray);
   max-width: 100%;
-  z-index: 1;
 }
 
 footer a {

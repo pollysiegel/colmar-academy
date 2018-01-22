@@ -27,12 +27,12 @@ Implementation strategy:
 8. Refine layout and mobile transitions
   a. Test on tablet (make sure requirements are met) (DONE)
   b. Test on mobile (make sure requirements are met) (DONE)
-9. Accessibility
+9. Accessibility (DONE)
 10. Fix logos in SVG editor so that they are light-gray
 
 Bugs
 
--- mobile bottom (exhibits) overlapping with footer
+-- mobile bottom (exhibits) overlapping with footer (FIXED)
 -- Terms/Privacy hover effects aren't working
 -- Color for logos on mobile need to be redone
 
