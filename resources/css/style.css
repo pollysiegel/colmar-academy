@@ -98,6 +98,10 @@ header .logo {
   height: 2rem;
 }
 
+header .logo img {
+  padding-right: .5rem;
+}
+
 header .right-side {
   display: inline-flex;
   flex-direction: row;
@@ -155,6 +159,12 @@ header a:hover {
 main {
   position: relative;
   padding-top: 4rem; /* To offset for fixed header. */
+}
+
+@media only screen and (max-width: 574px) {
+    main {
+        padding-top: 2.95rem;
+    }
 }
 
 

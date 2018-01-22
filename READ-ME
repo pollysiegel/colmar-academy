@@ -2,12 +2,18 @@ Colmar Academy Website
 
 Class project for Codecademy website building class
 
-Design Choices
+Design Choices:
 
 - Content:
    - Headings: sentence capitalized
-- Font family:
+- Fonts:
+   - Oxygen. Cuz I like the way it looks
+- Colors:
+   - Text color: dark gray which isn't as harsh as black
+   - Generated color palette which is mostly monochromatic
+       - Changed logo colors to look nice on header background
 - Transitions:
+   - Used only in a few in strategic places
 
 Implementation strategy:
 
@@ -28,19 +34,16 @@ Implementation strategy:
   a. Test on tablet (make sure requirements are met) (DONE)
   b. Test on mobile (make sure requirements are met) (DONE)
 9. Accessibility (DONE)
-10. Fix logos in SVG editor so that they are light-gray
+10. Fix logos in SVG editor so that they are light-gray (DONE)
 
 Bugs
 
 -- mobile bottom (exhibits) overlapping with footer (FIXED)
 -- Terms/Privacy hover effects aren't working (FIXED)
--- Color for logos on mobile need to be redone
+-- Color for logos on mobile need to be redone (FIXED)
 
 
-Design Choices
-
-Font: Open-Sans. Cuz I like the way it looks
-Text color: dark gray which isn't as harsh as black
+Specific colors:
 
 
 :root {
@@ -56,4 +59,3 @@ Text color: dark gray which isn't as harsh as black
   --green: #097A10; /* complement-4 */
 }
 
-Didn't use all colors, because they didn't
