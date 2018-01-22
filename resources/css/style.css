@@ -13,17 +13,7 @@
   --black-complement: #181E18; /* complement-3 */
   --green: #097A10; /* complement-4 */
 }
-.color-primary-0 { color: #5F5F5F }	/* Main Primary color */
-.color-primary-1 { color: #DEDEDE }
-.color-primary-2 { color: #A9A9A9 }
-.color-primary-3 { color: #261E1E }
-.color-primary-4 { color: #9A0F0B }
 
-.color-complement-0 { color: #4B4B4B }	/* Main Complement color */
-.color-complement-1 { color: #AFAFAF }
-.color-complement-2 { color: #858585 }
-.color-complement-3 { color: #181E18 }
-.color-complement-4 { color: #097A10 }
 
 /* Universal Styles */
 
@@ -121,6 +111,7 @@ header .right-side a {
 
 header a:hover {
   color: var(--light-gray-complement);
+  transition: color 0.25s ease-in 0.25s;
 }
 
 /* Style the two parts of the academy name */
@@ -205,6 +196,7 @@ main {
 .headline button:hover {
   color: var(--light-gray-complement);
   background-color: var(--dark-gray-complement);
+  transition: color 1.5s ease-in 0.5s;
 }
 
 @media only screen and (max-width: 575px) {
@@ -312,7 +304,9 @@ main {
 
 .info a.read-more:hover {
   color: var(--dark-gray-complement);
-  font-weight: 700;
+  font-weight: 800;
+  transition: color .25s linear,
+       font-weight .25s linear;
 }
 
 @media only screen and (max-width: 575px) {
@@ -387,6 +381,8 @@ main {
 .course:hover {
   background-color: var(--red);
   color: var(--light-gray-complement);
+  transition: color .25s ease-in-out 0.25s,
+         background-color .25s ease-in-out 0.25s;
 }
 
 .course img {
@@ -576,17 +572,19 @@ main {
 
 footer {
   background-color: var(--black);
-  color: var(--light-gray-complement);
+  color: var(--light-gray);
   max-width: 100%;
 }
 
 footer a {
-  color: var(--light-gray-complement);
+  color: var(--light-gray);
 }
 
 footer a:hover {
-  color: var(--light-gray);
+  color: var(--light-gray-complement);
+  transition: color 1.5s ease-in 0.5s;
 }
+
 
 footer .content {
   display: inline-flex;
@@ -607,9 +605,8 @@ footer .right-side {
 
 footer a:first-child {
   padding-right: 1rem;
-  border-right: 1px solid var(--light-gray-complement);
+  border-right: 1px solid var(--light-gray);
 }
-
 
 
 footer a:last-child {

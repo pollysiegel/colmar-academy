@@ -30,6 +30,12 @@ Implementation strategy:
 9. Accessibility
 10. Fix logos in SVG editor so that they are light-gray
 
+Bugs
+
+-- mobile bottom (exhibits) overlapping with footer
+-- Terms/Privacy hover effects aren't working
+-- Color for logos on mobile need to be redone
+
 
 Design Choices
 
