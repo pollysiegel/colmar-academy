@@ -3,12 +3,12 @@
 /* Universal Styles */
 
 html {
-  font-family: "Lato", "Arial", sans-serif;
+  font-family: "Oxygen", "Arial", sans-serif;
   font-size: 16px;
   text-align: left;
   line-height: 1.2;
   color: #444;
-  width: 100%;
+  max-width: 100%;
 }
 
 h1, h2, h3, h4 {
@@ -89,6 +89,10 @@ header .right-side a {
 
 /* Style the two parts of the academy name */
 
+.academy-name {
+  font-family: "Muli", "Oxygen", sans-serif;
+}
+
 .academy-name span:first-child {
   color: black;
   font-weight: 700;
@@ -133,7 +137,7 @@ main {
 
 .headline {
   background-color: lightgray;
-  width: 100%;
+  max-width: 100%;
 }
 
 .headline .container {
@@ -195,7 +199,7 @@ main {
 .info {
   .padding: 2rem 1.5rem;
   background-color: white;
-  width: 100%;
+  max-width: 100%;
 }
 
 .info .container {
@@ -237,7 +241,7 @@ main {
   align-items: center;
   padding: 1rem 1rem;
   border: .5px solid lightgray;
-  width: 100%;
+  max-width: 100%;
 }
 
 .info .item:last-child {
@@ -250,7 +254,7 @@ main {
 }
 
 .info .item .image img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .info .item .content {
@@ -299,12 +303,13 @@ main {
 
 .courses {
   background-color: lightgray;
-  width: 100%;
-  padding-top: 2rem;
+  max-width: 100%;
+  padding: 2rem 4.5rem;
 }
 
 .courses h2 {
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 /*
@@ -313,7 +318,6 @@ main {
 .courses .container {
   display: flex;
   flex-direction: column;
-  padding: 2rem 4.5rem;
   max-width: 100%;
 }
 
@@ -338,6 +342,7 @@ main {
 .course .content {
   padding-left: 1rem;
   padding-bottom: 1.5rem;
+  padding-right: .5rem;
 }
 
 /*
@@ -380,7 +385,7 @@ main {
 
   .courses {
     background-color: white;
-    width: 100%;
+    max-width: 100%;
   }
 
   .courses .container .row {
@@ -389,17 +394,21 @@ main {
   }
 
   .course {
-    margin: .5rem 1rem 0 1rem;
+    background-color: lightgray;
+    margin: .5rem 1rem 0 0;
+    padding: 1rem 0 1rem 1rem;
+    align-items: center;
+  }
+
+  .course .content {
+    padding-left: 0;
+    padding-bottom: 0;
   }
 
   .course img, .course h4, .course p {
     display: none;
   }
 
-  .course h3 {
-    background-color: lightgray;
-    padding: 1rem 0 1.5rem 1rem;
-  }
 
 
 }
@@ -411,6 +420,7 @@ main {
 .exhibits {
   margin-top: 2rem;
   margin-bottom: 2rem;
+  max-width: 100%;
 }
 
 .exhibits h2 {
@@ -430,13 +440,13 @@ main {
 }
 
 .exhibits .main-exhibit {
-  width: 60%;
+  max-width: 60%;
 }
 
 .exhibits .right-side {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  max-width: 40%;
   margin-left: 1.5rem;
 }
 
@@ -446,7 +456,7 @@ main {
   align-items: center;
   justify-content: flex-start;
   padding: 1rem 1rem;
-  width: 100%;
+  max-width: 100%;
 }
 
 
@@ -455,12 +465,12 @@ main {
 }
 
 .exhibits .right-side img {
-  width: 35%;
+  max-width: 35%;
   padding: 1rem 1rem;
 }
 
 .exhibits .right-side .content {
-  width: 65%;
+  max-width: 65%;
 }
 
 
@@ -491,7 +501,7 @@ main {
   }
 
   .exhibits .main-exhibit {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -506,7 +516,7 @@ footer .content {
   justify-content: space-between;
   align-items: center;
   margin: 1rem 1.5rem;
-  width: 100%;
+  max-width: 100%;
 }
 
 footer .right-side {
@@ -523,6 +533,6 @@ footer .right-side {
 
   footer .copyright {
     text-align: left;
-    width: 100%;
+    max-width: 100%;
   }
 }
