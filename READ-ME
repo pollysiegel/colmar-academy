@@ -14,6 +14,8 @@ Design Choices:
        - Changed logo colors to look nice on header background
 - Transitions:
    - Used only in a few in strategic places
+- Accessibility:
+   - Most images didn't add anything to the presentation (in my opinion), so I used blank alt tags in those cases
 
 Implementation strategy:
 
