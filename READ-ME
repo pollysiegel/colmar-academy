@@ -21,7 +21,7 @@ Implementation strategy:
   e. Fourth block (examples) (DONE)
   f. Footer (DONE)
 4. Add media queries for mobile (DONE)
-5. Refine fonts and typefaces
+5. Refine fonts and typefaces (DONE)
 6. Refine colors
 7. Work on transitions and hover effects
 8. Refine layout and mobile transitions
@@ -34,3 +34,17 @@ Design Choices
 
 Font: Open-Sans. Cuz I like the way it looks
 Text color: dark gray which isn't as harsh as black
+
+
+:root {
+  --light-gray: #DEDEDE; /* primary-1 */
+  --medium-gray: #A9A9A9; /* primary-2 */
+  --dark-gray: #5F5F5F;  /* primary-0 */
+  --red:#9A0F0B;  /* primary-4 */
+  --black: #261E1E; /* primary-3 */
+  --light-gray-complement: #AFAFAF; /* complement-1 */
+  --medium-gray-complement: #858585; /* complement-2 */
+  --dark-gray-complement: #4B4B4B; /* complement-0 */
+  --black-complement: #181E18; /* complement-3 */
+  --green: #097A10; /* complement-4 */
+}

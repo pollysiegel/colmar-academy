@@ -1,15 +1,43 @@
 
+/* Colors */
+
+:root {
+  --light-gray: #DEDEDE; /* primary-1 */
+  --medium-gray: #A9A9A9; /* primary-2 */
+  --dark-gray: #5F5F5F;  /* primary-0 */
+  --red:#9A0F0B;  /* primary-4 */
+  --black: #261E1E; /* primary-3 */
+  --light-gray-complement: #AFAFAF; /* complement-1 */
+  --medium-gray-complement: #858585; /* complement-2 */
+  --dark-gray-complement: #4B4B4B; /* complement-0 */
+  --black-complement: #181E18; /* complement-3 */
+  --green: #097A10; /* complement-4 */
+}
+.color-primary-0 { color: #5F5F5F }	/* Main Primary color */
+.color-primary-1 { color: #DEDEDE }
+.color-primary-2 { color: #A9A9A9 }
+.color-primary-3 { color: #261E1E }
+.color-primary-4 { color: #9A0F0B }
+
+.color-complement-0 { color: #4B4B4B }	/* Main Complement color */
+.color-complement-1 { color: #AFAFAF }
+.color-complement-2 { color: #858585 }
+.color-complement-3 { color: #181E18 }
+.color-complement-4 { color: #097A10 }
 
 /* Universal Styles */
+
+
 
 html {
   font-family: "Oxygen", "Arial", sans-serif;
   font-size: 16px;
   text-align: left;
   line-height: 1.2;
-  color: #444;
+  color: var(--black);
   max-width: 100%;
 }
+
 
 h1, h2, h3, h4 {
   font-weight:700;
@@ -37,10 +65,13 @@ p, button {
   line-height: 1.2;
 }
 
+/* Header */
+
 header {
   width: 100%;
   position: fixed;
-  background-color: white;
+  color: var(--light-gray);
+  background-color: var(--red);
   z-index: 1;     /* Keep header on top */
 }
 
@@ -84,6 +115,7 @@ header .right-side {
 }
 
 header .right-side a {
+  color: var(--light-gray);
   padding-left: 1rem;
 }
 
@@ -94,12 +126,12 @@ header .right-side a {
 }
 
 .academy-name span:first-child {
-  color: black;
+  color: var(--black-complement);
   font-weight: 700;
 }
 
 .academy-name span:last-child {
-  color: gray;
+  color: var(--medium-gray-complement);
   font-weight: 300;
   margin-left: -.25rem; /* Skootch the two pieces of the logo together */
 }
@@ -136,7 +168,7 @@ main {
  */
 
 .headline {
-  background-color: lightgray;
+  background-color: var(--light-gray);
   max-width: 100%;
 }
 
@@ -158,12 +190,17 @@ main {
 }
 
 .headline button {
-  color: white;
+  color: var(--light-gray);
   text-align: center;
-  background-color: darkgray;
+  background-color: var(--dark-gray);
   border: 0;
   height: 3rem;
   width: 90%;
+}
+
+.headline button:hover {
+  color: var(--light-gray-complement);
+  background-color: var(--dark-gray-complement);
 }
 
 @media only screen and (max-width: 575px) {
@@ -240,12 +277,14 @@ main {
   justify-content: flex-start;
   align-items: center;
   padding: 1rem 1rem;
-  border: .5px solid lightgray;
+  background-color: var(--light-gray);
+  border: 1px solid var(--light-gray-complement);
   max-width: 100%;
 }
 
 .info .item:last-child {
-  background-color: lightgray;
+  color: var(--light-gray);
+  background-color: var(--medium-gray-complement);
 }
 
 .info .item .image {
@@ -264,7 +303,7 @@ main {
 }
 
 .info a.read-more {
-  color: blue;
+  color: var(--red);
 }
 
 @media only screen and (max-width: 575px) {
@@ -302,7 +341,7 @@ main {
  */
 
 .courses {
-  background-color: lightgray;
+  background-color: var(--light-gray);
   max-width: 100%;
   padding: 2rem 4.5rem;
 }
@@ -332,7 +371,8 @@ main {
 .course {
   display: block;
   width: 100%;
-  background-color: white;
+  background-color: var(--light-gray-complement);
+  color: var(--black);
 }
 
 .course img {
@@ -394,7 +434,7 @@ main {
   }
 
   .course {
-    background-color: lightgray;
+    background-color: var(--light-gray);
     margin: .5rem 1rem 0 0;
     padding: 1rem 0 1rem 1rem;
     align-items: center;
@@ -459,9 +499,20 @@ main {
   max-width: 100%;
 }
 
+.exhibits p {
+  color: var(--black);
+}
 
 .exhibits .exhibit:first-child {
-  background-color: lightgray;
+  background-color: var(--light-gray);
+}
+
+.exhibits .exhibit:last-child {
+  background-color: var(--medium-gray);
+}
+
+.exhibit:last-child p, .exhibit:last-child h3 {
+  color: var(--light-gray);
 }
 
 .exhibits .right-side img {
@@ -510,7 +561,13 @@ main {
  */
 
 footer {
+  background-color: var(--black);
+  color: var(--light-gray-complement);
   max-width: 100%;
+}
+
+footer a {
+  color: var(--light-gray-complement);
 }
 
 footer .content {
@@ -519,7 +576,7 @@ footer .content {
   justify-content: space-between;
   align-items: center;
   margin: 1rem 1.5rem;
-  width: 100%;
+  width: 95%;
 }
 
 
@@ -532,7 +589,7 @@ footer .right-side {
 
 footer a:first-child {
   padding-right: 1rem;
-  border-right: 1px solid gray;
+  border-right: 1px solid var(--light-gray-complement);
 }
 
 footer a:last-child {
@@ -549,6 +606,6 @@ footer a:last-child {
 
   footer .content {
     justify-content: center;
-    max-width: 100%;
+    max-width: 95%;
   }
 }
